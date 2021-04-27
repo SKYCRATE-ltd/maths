@@ -39,7 +39,6 @@ export const random_item = list => list[random_int(0, list.length - 1)];
 
 export const uuid = (_parts = 2, _output = "") =>
 	_parts ? uuid(_parts - 1, _output + uuid_part()) : _output;
-export const buff = buffer => buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
 
 
 export class Vector extends Array {
